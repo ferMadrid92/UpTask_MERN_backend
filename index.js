@@ -14,9 +14,6 @@ dotenv.config();
 
 conectarDB();
 
-// Usar cors en todas las rutas
-app.use(cors())
-
 // Configurar CORS
 const whitelist = [process.env.FRONTEND_URL];
 
@@ -47,9 +44,7 @@ const servidor = app.listen(PORT, () => {
 // Socket.io
 const io = new Server(servidor, {
   pingTimeout: 60000,
-  cors: {
-    origin: process.env.FRONTEND_URL,
-  },
+  cors: cors(corsOptions)
 });
 
 io.on("connection", (socket) => {
