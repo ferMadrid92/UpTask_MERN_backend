@@ -3,6 +3,7 @@ import Tarea from "../models/Tarea.js";
 
 const agregarTarea = async (req, res) => {
   const { proyecto } = req.body;
+  delete req.body.id;
 
   const existeProyecto = await Proyecto.findById(proyecto);
 
@@ -95,10 +96,7 @@ const eliminarTarea = async (req, res) => {
 
 const cambiarEstado = async (req, res) => {
   const { id } = req.params;
-  const tarea = await Tarea.findById(id)
-    .populate("proyecto");
-
-  console.log(tarea);
+  const tarea = await Tarea.findById(id).populate("proyecto");
 
   if (!tarea) {
     const error = new Error("Tarea no encontrada");

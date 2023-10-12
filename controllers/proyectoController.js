@@ -13,6 +13,7 @@ const obtenerProyectos = async (req, res) => {
 };
 
 const nuevoProyecto = async (req, res) => {
+  delete req.body.id
   const proyecto = new Proyecto(req.body);
   proyecto.creador = req.usuario._id;
   try {
