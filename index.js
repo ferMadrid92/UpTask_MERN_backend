@@ -44,7 +44,9 @@ const servidor = app.listen(PORT, () => {
 // Socket.io
 const io = new Server(servidor, {
   pingTimeout: 60000,
-  cors: cors(corsOptions)
+  cors: {
+    origin: process.env.FRONTEND_URL,
+  },
 });
 
 io.on("connection", (socket) => {
