@@ -14,6 +14,9 @@ dotenv.config();
 
 conectarDB();
 
+// Usar cors en todas las rutas
+app.use(cors())
+
 // Configurar CORS
 const whitelist = [process.env.FRONTEND_URL];
 
