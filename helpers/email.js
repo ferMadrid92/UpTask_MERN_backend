@@ -67,10 +67,10 @@ export const emailRegistro = async (datos) => {
       <body>
           <table>
           <tr>
-            <td style="background-color:#0284C7; display: flex; align-items: center; justify-content: center;">
-              <h1 style="font-size: 21px; color: #ffffff; font-weight: bold;">UpTask</h1>
-            </td>
-          </tr>
+          <td style="background-color:#0284C7;">
+            <h1 style="font-size: 21px; color: #ffffff; font-weight: bold; display: table-cell; vertical-align: middle; text-align: center;">UpTask</h1>
+          </td>
+        </tr>
                 <tr>
                   <td style="padding-top: 60px;">
                   <p style="font-size: 16px; color: #666666; text-align:center; padding-bottom:20px;">Hola: <span style="font-weight:bold;">${nombre}</span>, ayúdanos a comprobar tu cuenta</p>
@@ -162,10 +162,10 @@ export const emailOlvidePassword = async (datos) => {
     <body>
         <table>
         <tr>
-          <td style="background-color:#0284C7; display: flex; align-items: center; justify-content: center;">
-            <h1 style="font-size: 21px; color: #ffffff; font-weight: bold;">UpTask</h1>
-          </td>
-        </tr>
+        <td style="background-color:#0284C7;">
+          <h1 style="font-size: 21px; color: #ffffff; font-weight: bold; display: table-cell; vertical-align: middle; text-align: center;">UpTask</h1>
+        </td>
+      </tr>
             <tr>
               <td style="padding-top: 60px;">
               <p style="font-size: 16px; color: #666666; text-align:center; padding-bottom:20px;">Hola: <span style="font-weight:bold;">${nombre}</span>, has solicitado reestablecer tu password</p>
