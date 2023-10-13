@@ -19,7 +19,7 @@ export const emailRegistro = async (datos) => {
       subject: "UpTask - Confirma tu cuenta",
       text: "Comprueba tu cuenta en UpTask",
       html: `<!DOCTYPE html>
-      <html>
+      <html lang="es">
       <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -66,11 +66,11 @@ export const emailRegistro = async (datos) => {
       </head>
       <body>
           <table>
-                <tr>
-                  <td style="background-color: rgb(2 132 199); display: flex; justify-content: center;">
-                    <h1 style="font-size: 21px; color: #ffffff; font-weight: bold;">UpTask</h1>
-                  </td>
-                </tr>
+          <tr>
+            <td style="background-color:#0284C7; display: flex; align-items: center; justify-content: center;">
+              <h1 style="font-size: 21px; color: #ffffff; font-weight: bold;">UpTask</h1>
+            </td>
+          </tr>
                 <tr>
                   <td style="padding-top: 60px;">
                   <p style="font-size: 16px; color: #666666; text-align:center; padding-bottom:20px;">Hola: <span style="font-weight:bold;">${nombre}</span>, ayúdanos a comprobar tu cuenta</p>
@@ -114,7 +114,7 @@ export const emailOlvidePassword = async (datos) => {
     subject: "UpTask - Reestablece tu Password",
     text: "Reestablece tu Password",
     html: `<!DOCTYPE html>
-    <html>
+    <html lang="es">
     <head>
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -160,12 +160,12 @@ export const emailOlvidePassword = async (datos) => {
         </style>
     </head>
     <body>
-    <table>
-            <tr>
-              <td style="background-color: rgb(2 132 199); display: flex; justify-content: center;">
-                <h1 style="font-size: 21px; color: #ffffff; font-weight: bold;">UpTask</h1>
-              </td>
-            </tr>
+        <table>
+        <tr>
+          <td style="background-color:#0284C7; display: flex; align-items: center; justify-content: center;">
+            <h1 style="font-size: 21px; color: #ffffff; font-weight: bold;">UpTask</h1>
+          </td>
+        </tr>
             <tr>
               <td style="padding-top: 60px;">
               <p style="font-size: 16px; color: #666666; text-align:center; padding-bottom:20px;">Hola: <span style="font-weight:bold;">${nombre}</span>, has solicitado reestablecer tu password</p>
